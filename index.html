@@ -44,14 +44,15 @@
     </div>
 
     <div class="main-content" id="mainContent">
-        <header class="mainHeader">
+        <header class="mainHeader innerGreenFixed">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="navbarHeader">
                             <div class="logo">
-                                <a href="/">
-                                    <img src="./images/logo.png" alt="logo">
+                                <a href="/index.html">
+                                    <img src="../images/logo.png" alt="logo">
+                                    <img src="./images/greenLogo.png" class="greenLogo" alt="logo">
                                 </a>
                             </div>
                             <div class="menu">
@@ -63,21 +64,78 @@
                                         <a href="" class="aboutSection">ABOUT</a>
                                     </li>
                                     <li>
-                                        <a href="./portfolio.html">PORTFOILO</a>
+                                        <a href="../portfolio.html">PORTFOILO</a>
                                     </li>
                                     <li>
                                         <a href="#services">SERVICES</a>
                                     </li>
                                     <li>
-                                        <a href="" class="contactSection"> CONTACT US</a>
+                                        <a href="./contact.html">CONTACT US</a>
                                     </li>
                                 </ul>
+                                <button class="hamburger-btn" id="hamburgerBtn">
+                                    <div class="line"></div>
+                                    <div class="line"></div>
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="menu-content">
+                <div class="menu-left">
+                    <div class="contact-info">
+                        <div class="infoItem" data-aos="fade-right" data-aos-delay="300">
+                            <h4>E-mail</h4>
+                            <a href="mailto:elevaretro.com">elevaretro.com</a>
+                        </div>
+                        <div class="infoItem">
+                            <h4>Careers</h4>
+                            <a href="mailto:hr@elevaretro.com">hr@elevaretro.com</a>
+                        </div>
+
+                        <div class="infoItem">
+                            <h4>Address</h4>
+                            <a href="www.googlemaps.com" target="_blank">KSA - Jeddah</a>
+                        </div>
+                    </div>
+
+                    <div class="menu-description">
+                        For each project the approach rests on a careful understanding of the space, or the site's.
+                    </div>
+
+                    <button class="btn btn-2 hover-slide-right">
+                        <span>SEND REQUEST</span>
+                    </button>
+                </div>
+
+                <div class="menu-right">
+                    <nav>
+                        <ul class="nav-menu">
+                            <li>
+                                <a href="">COMMUNITY</a>
+                            </li>
+                            <li>
+                                <a href="" class="aboutSection">ABOUT</a>
+                            </li>
+                            <li>
+                                <a href="../portfolio.html">PORTFOILO</a>
+                            </li>
+                            <li>
+                                <a href="#services">SERVICES</a>
+                            </li>
+                            <li>
+                                <a href="./contact.html">CONTACT US</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
 
         <section class="hero" id="hero">
 
@@ -138,7 +196,7 @@
                 <div class="sectionLinks">
                     <button class="link" id="forAbout">
                         <i class="fa-solid fa-chevron-down arrowLinks"></i>
-                        About Us
+                        BUILT ON VISION
                     </button>
 
                     <button class="link" id="forContact">
@@ -290,12 +348,14 @@
                                 <span></span>
                             </li>
                         </ul>
-                        <h1 data-aos="fade-up" data-aos-delay="500">OUR - STORY</h1>
+                        <h1 data-aos="fade-up" data-aos-delay="500"><b> OUR </b> - STORY</h1>
                     </div>
                     <div class="col-md-6" data-aos="fade-right" data-aos-delay="700">
-                        <p>Elevaretro started from a simple dream and a genuine passion to transform ideas into tangible
+                        <p><b>Elevaretro</b> started from a simple dream and a genuine passion to transform ideas into
+                            tangible
                             spaces that reflect soul and authenticity. In the beginning, we were a small group of
-                            professionals who believed that every space has a story, and that executing it with care and
+                            professionals who believed that <b>every space has a story</b>, and that executing it with
+                            care and
                             precision brings that story to life. Through our first projects, we realized that true
                             quality
                             is not only about materials or construction techniques — it is about the thoughtful
@@ -303,16 +363,17 @@
                             the execution details that add emotional value to the space.</p>
                     </div>
                     <div class="col-md-6" data-aos="fade-right" data-aos-delay="900">
-                        <p>We built strong relationships with our clients, learning that trust and transparent
-                            communication
+                        <p>We built strong relationships with our clients, learning that trust and <b>transparent
+                                communication</b>
                             are key to transforming visions into reality. Over time, Elevaretro grew, but we never lost
                             sight of our roots. Our focus remains clear: to execute projects with precision, passion,
                             and
-                            full responsibility, delivering spaces that combine functionality, beauty, and user
+                            <b>full responsibility</b>, delivering spaces that combine functionality, beauty, and user
                             experience —
                             always aligned with the client’s vision and objectives. We are proud of our journey, and we
                             welcome every new challenge as an opportunity to demonstrate that passion, honesty, and
-                            discipline are the true keys to sustainable success.</p>
+                            discipline are the true keys to sustainable success.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -324,25 +385,25 @@
             <ul>
                 <li data-aos="fade-up" data-aos-delay="200">
                     <a href="./services/foundation.html">
-                        <h1 data-aos="fade-up" data-aos-delay="400"> Project - Foundations</h1>
+                        <h1 data-aos="fade-up" data-aos-delay="400"> <b>Project </b> - Foundations</h1>
                         <img src="./art/4x/Asset 2@4x.png" alt="services image">
                     </a>
                 </li data-aos="fade-up" data-aos-delay="300">
                 <li>
                     <a href="./services/seamless.html">
-                        <h1 data-aos="fade-up" data-aos-delay="500"> Seamless - Execution</h1>
+                        <h1 data-aos="fade-up" data-aos-delay="500"> <b>Seamless </b> - Execution</h1>
                         <img src="./art/4x/Asset 3@4x.png" alt="services image">
                     </a>
                 </li>
                 <li data-aos="fade-up" data-aos-delay="400">
                     <a href="./services/qualityControl.html">
-                        <h1 data-aos="fade-up" data-aos-delay="600">Quality Control & Risk protection </h1>
+                        <h1 data-aos="fade-up" data-aos-delay="600"><b>Quality Control </b> & Risk protection </h1>
                         <img src="./art/4x/Asset 4@4x.png" alt="services image">
                     </a>
                 </li>
                 <li data-aos="fade-up" data-aos-delay="500">
                     <a href="./services/smoothHandover.html">
-                        <h1 data-aos="fade-up" data-aos-delay="700">Smooth Handover & Beyond</h1>
+                        <h1 data-aos="fade-up" data-aos-delay="700"><b>Smooth Handover </b> & Beyond</h1>
                         <img src="./art/4x/Asset 14@4x.png" alt="services image">
                     </a>
                 </li>
@@ -586,7 +647,69 @@
         showSlide(0);
     </script>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const mainHeader = document.querySelector(".mainHeader");
+            const mobileMenu = document.getElementById('mobileMenu');
+            const hamburgerBtn = document.getElementById('hamburgerBtn');
+            const servicesSection = document.getElementById('services');
 
+            window.addEventListener("scroll", function () {
+                let scrollPos = window.scrollY || window.pageYOffset;
+
+                // Fixed header logic
+                if (scrollPos >= 100) {
+                    mainHeader.classList.add("fixedHeader");
+                } else {
+                    mainHeader.classList.remove("fixedHeader");
+                    mobileMenu.classList.remove('active');
+                    hamburgerBtn.classList.remove('active');
+                }
+
+                // Services section logic
+                if (servicesSection) {
+                    const servicesTop = servicesSection.offsetTop;
+                    const servicesHeight = servicesSection.offsetHeight;
+                    const servicesBottom = servicesTop + servicesHeight;
+
+                    // Add class when services section is in view
+                    if (scrollPos >= servicesTop - 100 && scrollPos < servicesBottom) {
+                        mainHeader.classList.add("servicesActive");
+                    } else {
+                        mainHeader.classList.remove("servicesActive");
+                    }
+                }
+            });
+        });
+    </script>
+    <script>
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        // Toggle menu with hamburger button
+        hamburgerBtn.addEventListener('click', function () {
+            this.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+
+        });
+
+        // Close menu when clicking outside
+        mobileMenu.addEventListener('click', function (event) {
+            if (event.target === mobileMenu) {
+                hamburgerBtn.classList.remove('active');
+                mobileMenu.classList.remove('active');
+
+            }
+        });
+
+        // Close with Escape key
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape') {
+                hamburgerBtn.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            }
+        });
+    </script>
 
 </body>
 
