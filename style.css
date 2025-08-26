@@ -448,6 +448,7 @@ section.innerServices .text ul {
   position: relative;
   height: 100%;
   z-index: 2;
+  height: 100vh;
 }
 .portfolio .portfolioList li {
   width: 100%;
@@ -455,6 +456,8 @@ section.innerServices .text ul {
   position: relative;
   transition: 0.3s ease-in-out;
 }
+.portfolioList li:not(:empty):hover,
+.portfolioList li:has(a):hover,
 .portfolio .portfolioList li:nth-child(5):hover,
 .portfolio .portfolioList li:nth-child(6):hover,
 .portfolio .portfolioList li:nth-child(7):hover,
@@ -1864,7 +1867,7 @@ section.innerServices.contactForm form button span {
   border: 0.5px solid #fff;
   position: relative;
   transition: 0.3s ease-in-out;
-  /* min-height: 280px; */
+  min-height: 280px;
 }
 .portfolio .portfolioList {
   overflow-y: auto;
