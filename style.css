@@ -1871,12 +1871,6 @@ section.innerServices.contactForm form button span {
   }
 }
 
-@media (min-width: 576px) {
-  .container,
-  .container-sm {
-    max-width: 100%;
-  }
-}
 @media (max-width: 767px) {
   .mainHeader .navbarHeader .menu ul {
     display: none;
@@ -2035,5 +2029,9 @@ section.innerServices.contactForm form button span {
   }
   section#services {
     padding-top: 50px;
+  }
+  .container,
+  .container-sm {
+    max-width: 100%;
   }
 }
