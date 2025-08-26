@@ -2082,4 +2082,11 @@ section.innerServices.contactForm form button span {
   .services .mainTitle{
     margin-bottom: 30px;
   }
+  .portfolioList [data-aos^=fade][data-aos^=fade] {
+    opacity: 1;
+    transition-property: unset;
+  }
+  .portfolioList [data-aos=fade-right] {
+    transform: unset;
+  }
 }
