@@ -2034,4 +2034,8 @@ section.innerServices.contactForm form button span {
   .container-sm {
     max-width: 100%;
   }
+  .heroModel .sectionLinks button{
+    font-size: 15px;
+    padding: 20px;
+  }
 }
