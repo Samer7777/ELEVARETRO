@@ -1586,7 +1586,7 @@ textarea.form-control {
   }
 }
 
-:active,
+/* :active,
 :hover,
 :focus {
   outline: 0 !important;
@@ -1596,7 +1596,7 @@ textarea.form-control {
 ::after {
   position: absolute;
   content: "";
-}
+} */
 
 .btn {
   position: relative;
@@ -1857,7 +1857,16 @@ section.innerServices.contactForm form button span {
   width: max-content;
   min-width: 22%;
 }
-
+.portfolio .portfolioList li {
+    width: 100%;
+    border: 0.5px solid #fff;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    min-height: 280px;
+}
+.portfolio .portfolioList{
+  overflow-y: auto;
+}
 @media (max-width: 1024px) {
   .services ul {
     display: grid;
