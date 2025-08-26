@@ -2101,4 +2101,7 @@ section.innerServices.contactForm form button span {
   .portfolio .portfolioList li a i {
     font-size: 16px;
   }
+  .portfolioText .socialLInks{
+    margin-top: 0;
+  }
 }
