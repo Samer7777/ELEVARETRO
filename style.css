@@ -1331,20 +1331,27 @@ textarea.form-control {
   font-weight: 400;
 }
 
-/* custom cursor */
 .cursor {
   position: fixed;
   top: 0;
   left: 0;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   pointer-events: none;
   transform: translate(-50%, -50%);
-  transition: transform 0.15s ease-out; /* smooth movement */
+  transition: transform 0.15s ease-out;
   z-index: 1000;
   background: url("./art/SVG/cursor.svg") center center no-repeat;
   background-size: auto;
+}
+.cursor {
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.1s ease;
+}
+
+.cursor.hide {
+    opacity: 0;
+    visibility: hidden;
 }
 
 .slider {
@@ -1359,7 +1366,7 @@ textarea.form-control {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; /* shadow height */
+  height: 100%;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
   pointer-events: none;
   z-index: 2;

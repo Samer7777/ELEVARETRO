@@ -191,6 +191,43 @@
 
 
     </section>
+
+        <div class="cursor"></div>
+
+    <script>
+        const cursor = document.querySelector(".cursor");
+        const header = document.querySelector(".mainHeader");
+        let mouseX = 0, mouseY = 0;
+        let cursorX = 0, cursorY = 0;
+
+        // إضافة transition للكورسر في CSS أو هنا
+        cursor.style.transition = "opacity 0.3s ease, visibility 0.3s ease";
+
+        document.addEventListener("mousemove", e => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
+
+        // إخفاء الكورسر مع انيميشن
+        header.addEventListener("mouseenter", () => {
+            cursor.style.opacity = "0";
+            cursor.style.visibility = "hidden";
+        });
+
+        // إظهار الكورسر مع انيميشن
+        header.addEventListener("mouseleave", () => {
+            cursor.style.opacity = "1";
+            cursor.style.visibility = "visible";
+        });
+
+        function animate() {
+            cursorX += (mouseX - cursorX) * 0.1;
+            cursorY += (mouseY - cursorY) * 0.1;
+            cursor.style.transform = `translate(${cursorX}px, ${cursorY}px)`;
+            requestAnimationFrame(animate);
+        }
+        animate();
+    </script>
     <script>
         const aboutHeaderBtn = document.querySelector('.aboutSection');
         const contactHeaderBtn = document.querySelector('.contactSection');
