@@ -441,6 +441,23 @@
         const aboutSection = document.getElementById('about');
         const contactSection = document.getElementById('contact');
 
+        // التحقق من كون الجهاز موبايل
+        function isMobile() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ||
+                window.innerWidth < 768;
+        }
+
+        // دالة للسكرول التلقائي (للموبايل فقط)
+        function scrollToContent() {
+            if (isMobile()) {
+                const scrollDistance = window.innerHeight * 0.8; // 90vh
+                window.scrollTo({
+                    top: scrollDistance,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
         // دالة لعرض قسم About
         function showAboutSection() {
             aboutBtn.classList.add('active');
@@ -449,6 +466,9 @@
             contactBtn.classList.add('hide');
             aboutSection.classList.add('active');
             contactSection.classList.remove('active');
+
+            // إضافة السكرول للموبايل
+            scrollToContent();
         }
 
         // دالة لعرض قسم Contact
@@ -459,6 +479,9 @@
             aboutBtn.classList.add('hide');
             contactSection.classList.add('active');
             aboutSection.classList.remove('active');
+
+            // إضافة السكرول للموبايل
+            scrollToContent();
         }
 
         // دالة لإخفاء الأقسام
@@ -514,7 +537,6 @@
             });
         }
 
-        // فحص إذا في hash في الـ URL لما تحمل الصفحة
         // فحص URL parameters بدلاً من hash
         window.addEventListener('load', () => {
             const urlParams = new URLSearchParams(window.location.search);

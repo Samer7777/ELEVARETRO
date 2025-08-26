@@ -1860,16 +1860,16 @@ section.innerServices.contactForm form button span {
   min-width: 22%;
 }
 .portfolio .portfolioList li {
-    width: 100%;
-    border: 0.5px solid #fff;
-    position: relative;
-    transition: 0.3s ease-in-out;
-    /* min-height: 280px; */
+  width: 100%;
+  border: 0.5px solid #fff;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  /* min-height: 280px; */
 }
-.portfolio .portfolioList{
+.portfolio .portfolioList {
   overflow-y: auto;
 }
-.showOnMobile{
+.showOnMobile {
   display: none;
 }
 @media (max-width: 1024px) {
@@ -1886,10 +1886,10 @@ section.innerServices.contactForm form button span {
 }
 
 @media (max-width: 767px) {
-  .showOnMobile{
+  .showOnMobile {
     display: block;
   }
-  .hideOnMobile{
+  .hideOnMobile {
     display: none;
   }
   .mainHeader .navbarHeader .menu ul {
@@ -2054,39 +2054,39 @@ section.innerServices.contactForm form button span {
   .container-sm {
     max-width: 100%;
   }
-  .heroModel .sectionLinks button{
+  .heroModel .sectionLinks button {
     font-size: 15px;
     padding: 20px;
   }
-  .hero .slideContent img{
+  .hero .slideContent img {
     margin-bottom: 10px;
   }
-  .slider{
+  .slider {
     height: 90vh;
   }
   .heroModel {
     position: relative;
   }
-  .heroModel .content.active{
+  .heroModel .content.active {
     height: auto;
   }
-  .mainHeader .navbarHeader .menu.contactMenu ul{
+  .mainHeader .navbarHeader .menu.contactMenu ul {
     display: flex;
   }
-  .mainHeader .navbarHeader .menu.contactMenu .hamburger-btn{
+  .mainHeader .navbarHeader .menu.contactMenu .hamburger-btn {
     display: none;
   }
-  .ourStory p{
+  .ourStory p {
     max-width: 100%;
   }
-  .services .mainTitle{
+  .services .mainTitle {
     margin-bottom: 30px;
   }
-  .portfolioList [data-aos^=fade][data-aos^=fade] {
+  .portfolioList [data-aos^="fade"][data-aos^="fade"] {
     opacity: 1;
     transition-property: unset;
   }
-  .portfolioList [data-aos=fade-right] {
+  .portfolioList [data-aos="fade-right"] {
     transform: unset;
   }
   .portfolio .portfolioList li a div {
@@ -2101,7 +2101,7 @@ section.innerServices.contactForm form button span {
     border: none;
     opacity: 1;
   }
-  .portfolio .portfolioList li a i{
+  .portfolio .portfolioList li a i {
     font-size: 16px;
   }
 }
