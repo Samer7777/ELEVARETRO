@@ -2053,4 +2053,10 @@ section.innerServices.contactForm form button span {
   .slider{
     height: 90vh;
   }
+  .heroModel {
+    position: relative;
+  }
+  .heroModel .content.active{
+    height: auto;
+  }
 }
