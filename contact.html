@@ -131,7 +131,7 @@
 
     <!-- Page 2 -->
     <div class="page page-2 hidden" id="page2">
-        <header class="mainHeader">
+        <header class="mainHeader hideOnMobile">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -165,7 +165,36 @@
                 </div>
             </div>
         </header>
+            <div class="showOnMobile">
+        <header class="mainHeader innerGreenFixed">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="navbarHeader">
+                            <div class="logo">
+                                <a href="/index.html">
+                                    <img src="../images/logo.png" alt="logo">
+                                    <img src="../images/greenLogo.png" class="greenLogo" alt="logo">
+                                </a>
+                            </div>
+                            <div class="menu contactMenu">
+                                <ul>
+                                    <li>
+                                        <a style="cursor: pointer;" onclick="navigateToPage('page1', 'slide-left')">CONTACT US</a>
+                                    </li>
+                                </ul>
+                                <button class="hamburger-btn" id="hamburgerBtn">
+                                    <div class="line"></div>
+                                    <div class="line"></div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
 
+    </div>
         <section class="innerServices contactForm">
             <img src="./images/building1.jpg" alt="img-fluid">
             <div class="container">
@@ -175,7 +204,7 @@
                             Your next project starts <br>
                             here !
                         </h1>
-                        <form action="#">
+                        <form action="/contact.html">
                             <div class="form-group">
                                 <label for="name">First Name & Last Name</label>
                                 <input type="text" class="form-control" placeholder="Enter username" id="name">
