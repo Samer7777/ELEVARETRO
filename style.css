@@ -1879,7 +1879,7 @@ section.innerServices.contactForm form button span {
     display: block;
   }
   .hero .slideContent ul {
-    gap: 20px;
+    gap: 12px;
     flex-wrap: wrap;
     width: max-content;
   }
@@ -2037,5 +2037,11 @@ section.innerServices.contactForm form button span {
   .heroModel .sectionLinks button{
     font-size: 15px;
     padding: 20px;
+  }
+  .hero .slideContent img{
+    margin-bottom: 10px;
+  }
+  .slider{
+    height: 90vh;
   }
 }
