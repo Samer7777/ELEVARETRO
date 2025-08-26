@@ -2011,9 +2011,6 @@ section.innerServices.contactForm form button span {
   section.innerServices .text {
     padding-top: 60px;
   }
-  section.innerServices .text .portfolioText ul {
-    margin-top: -30px !important;
-  }
   section.innerServices .container {
     justify-content: start;
   }
